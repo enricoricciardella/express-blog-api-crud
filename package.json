@@ -1,0 +1,15 @@
+{
+  "name": "express-blog-api-crud",
+  "version": "1.0.0",
+  "description": "esercizio di oggi: Express Blog - API CRUD (parte 1) repo: express-blog-api-crud Esercizio",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node --watch app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}
