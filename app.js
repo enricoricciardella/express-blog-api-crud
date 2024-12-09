@@ -5,8 +5,10 @@ const app = express();
 const arrayRicette = require("./data");
 console.log(arrayRicette);
 const postsRouters = require("./routers/post");
+const { checkReqError } = require("./middlewares/checkware");
 //Richiamiamo un metodo per far si che il server riconosca il formato JSON della richiesta
 app.use(express.json());
+app.use(checkReqError.checkReqError)
 
 //Rendo la cartella visibile e utilizzabile a tutti tramite .USE
 app.use(express.static("public"));
